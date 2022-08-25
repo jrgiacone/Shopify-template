@@ -1,0 +1,724 @@
+:root {
+    --h1-font-size: 30px;
+    --main-color: #ed5843;
+    --main-font-size: 25px;
+    --second-font-size: 21px;
+    --padding-anchor: 15px 20px;
+    --again-font: 35px;
+    --font-family_anchor: sofiaprosemiBold;
+    --tan_font_family: tan_Nnimbus;
+    --sofiapro_regular: sofiaproR;
+    --sofaiBold:sofaiproBold;
+}
+
+@font-face {
+    font-family: sofiaproR;
+    src: url("https://cdn.shopify.com/s/files/1/0490/8086/0834/files/SofiaProRegular.woff?v=1636729019");
+}
+
+@font-face {
+    font-family: sofiaprosemiBold;
+    src: url("https://cdn.shopify.com/s/files/1/0490/8086/0834/files/SofiaProSemiBold.woff?v=1636729049");
+}
+
+@font-face {
+    font-family: tan_Nnimbus;
+    src: url("https://cdn.shopify.com/s/files/1/0490/8086/0834/files/tan_Nnimbus.woff?v=1636729049");
+}
+
+@font-face {
+    font-family:sofaiproBold ;
+    src: url("https://cdn.shopify.com/s/files/1/0490/8086/0834/files/SofiaProBold.woff?v=1636729049");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-family: sofiaproR !important;
+    text-decoration: none;
+    display: block;
+}
+
+span {
+    display: inline-block;
+}
+
+ul,
+ol,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.top_bar {
+    background: linear-gradient(90deg, rgb(206, 242, 119) 0%, rgb(168, 216, 216) 100%);
+    padding: 10px 0px;
+}
+
+.top_bar p {
+    text-align: center;
+    font-size: 18px;
+}
+/* .page_nav {
+    width: 20%;
+}
+
+.user_engage {
+    width: 20%;
+} */
+  
+  .site_logo a img {
+    max-width: 90%;
+    margin-left: auto;
+}
+
+.user_engage ul {
+    justify-content: end;
+}
+
+.site_header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.site_logo {
+    width: 100%;
+    max-width: 10%;
+    margin: 0px auto;
+}
+
+.site_header_content ul {
+    display: flex;
+    align-items: center;
+}
+
+.site_header_content ul li a {
+    margin: 0px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.page_nav ul li:first-child a {
+    margin-left: 0px;
+}
+
+.user_engage ul li:last-child a {
+    margin-right: 0px;
+}
+
+section.banner {
+    width: 100%;
+    height: calc(90vh - 148px);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.banner_content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner_content a {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    text-transform: uppercase;
+    padding: var(--padding-anchor);
+    width: max-content;
+    margin: 0px auto;
+    border: 1px solid rgb(237, 88, 67);
+    border-radius: 40px;
+    font-family: var(--font-family_anchor);
+    display: inline-block;
+    line-height: 30px;
+    padding: 10px 20px 15px;
+}
+
+section.as_seen_in {
+    background-color: rgb(114, 145, 246);
+    padding: 50px 0px;
+}
+
+.as_seen_in_content {
+    text-align: center;
+    word-spacing: 8px;
+    letter-spacing: 8px;
+}
+
+.as_seen_in_content h1 {
+    text-transform: uppercase;
+    font-family: sofiaproR !important;
+    color: rgb(255, 255, 255);
+    font-size: var(--again-font);
+}
+
+/* .make_use_special_properties {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+} */
+
+.make_use_special_content {
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.make_use_special_content h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 35px;
+    margin-bottom: 60px;
+    font-family: "tan_Nnimbus";
+      letter-spacing: 7px;
+}
+
+.properties h3 {
+    color: var(--main-color);
+    font-size: 27px;
+    margin-bottom: 20px;
+    font-family: var(--font-family_anchor);
+}
+
+.properties p {
+    color: var(--main-color);
+    font-size: 20px;
+    font-family: sofiaproR;
+    line-height: 1.5;
+}
+
+.our_specfilty {
+    margin-bottom: 20px;
+    min-height: 176px;
+}
+
+section.make_us_special {
+    padding: 50px 0px;
+}
+
+.properties {
+    width: 100%;
+    max-width: 45%;
+}
+
+  .as-seen-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.make_use_special_content a {
+    margin: 40px auto 0px;
+    width: max-content;
+    padding: var(--padding-anchor);
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    font-family: var(--font-family_anchor);
+    text-transform: uppercase;
+    border: 1px solid rgb(237, 88, 67);
+    border-radius: 33px;
+}
+
+.find_your_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.find_your_scent_img {
+    width: 100%;
+      background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 50%;
+/*     background-color: rgb(114, 145, 246); */
+}
+
+.find_your_scent_text {
+    width: 100%;
+    max-width: 50%;
+    background-image: url("linear.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.scent h1 {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    margin-bottom: 20px;
+    font-family: var(--tan_font_family);
+}
+
+.scent p {
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-family: var(--sofiapro_regular);
+}
+
+.scent a {
+    font-size: var(--main-font-size);
+    font-family: var(--font-family_anchor);
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.scent {
+    width: 100%;
+    max-width: 40%;
+}
+
+.scent a {
+    width: max-content;
+    padding: var(--padding-anchor);
+    border: 1px solid rgb(237, 88, 67);
+    border-radius: 30px;
+}
+
+.buy_candle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+.shop_our_product {
+    padding: 50px 0px;
+}
+
+.candle_porducts {
+    width: 100%;
+    max-width: 32%;
+    padding: 20px;
+}
+
+.product_img {
+    padding: 20px;
+    border: 1px solid;
+}
+.product_img img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.candle_porducts p {
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    margin-top: 15px;
+    text-align: center;
+    font-family: var(--sofiapro_regular);
+}
+
+.candle_porducts span {
+    display: block;
+    text-align: center;
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    font-family: var(--sofiapro_regular);
+}
+
+.shop_our_product_content a {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    font-family: var(--font-family_anchor);
+    text-transform: uppercase;
+    width: max-content;
+    padding: var(--padding-anchor);
+    margin: 10px auto 0px;
+    border: 1px solid rgb(237, 88, 67);
+    border-radius: 40px;
+}
+
+.our_playlist {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listen_playlist {
+    width: 100%;
+    max-width: 47%;
+}
+
+section.playlist {
+    background-color: rgb(182, 153, 219);
+    padding: 50px 0px;
+}
+
+.playlist_title {
+    display: flex;
+    align-items: center;
+    background-color: rgb(153, 153, 153);
+    padding: 30px;
+}
+
+.up_next {
+    background-color: rgb(0, 0, 0);
+}
+
+.up_next p {
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    border-bottom: 1px solid white;
+    font-size: var(--again-font);
+    font-family: var(--sofiapro_regular);
+}
+
+.up_next p:last-child {
+    /* padding-bottom: 0px; */
+    border: none;
+}
+
+.playlist_name h1 {
+    font-size: var(--again-font);
+    color: rgb(255, 255, 255);
+}
+
+.playlist_name span {
+    font-size: var(--again-font);
+    color: rgb(255, 255, 255);
+}
+
+.playlist_content {
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.playlist_name {
+    margin-left: 30px;
+}
+
+.playlist_img {
+    width: 100%;
+    max-width: 17%;
+    min-height: 110px;
+    background-color: rgb(255, 255, 255);
+}
+
+section.donating_to_someone {
+    background: linear-gradient(90deg, rgb(176, 219, 220) 0%, rgb(206, 241, 122) 100%);
+    padding: 100px 0px;
+}
+
+.donating_to_someone_content img {
+    width: 100%;
+    max-width: 40%;
+    margin: 0px auto;
+}
+
+.donating_to_someone_content h1 {
+    font-size: 59px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-family: var(--sofiapro_regular);
+      letter-spacing: 4px;
+}
+
+.our_blog_content h1 {
+    color: rgb(114, 145, 246);
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--tan_font_family);
+          letter-spacing: 6px;
+}
+
+.our_blog_content {
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.bolg_text h1 {
+    text-align: left;
+    font-size: 34px;
+    font-family: var(--font-family_anchor);
+}
+
+.read_our_blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px;
+    flex-wrap: wrap;
+}
+
+.bolg_text p {
+    color: rgb(114, 145, 246);
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 30px 0px;
+    max-width: 60%;
+    font-family: var(--sofiapro_regular);
+}
+
+.blog_img {
+    width: 100%;
+    max-width: 38%;
+    min-height: 500px;
+/*     background-color: rgb(114, 145, 246); */
+  background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bolg_text {
+    margin-left: 100px;
+}
+
+section.our_blog {
+    padding: 100px 0px;
+}
+
+.bolg_text a {
+    color: rgb(114, 145, 246);
+    font-size: var(--main-font-size);
+    padding: var(--padding-anchor);
+    font-family: var(--font-family_anchor);
+    border: 1px solid rgb(114, 145, 246);
+    border-radius: 40px;
+    width: max-content;
+}
+
+section.some_text {
+    background-color: #ed5843;
+    padding: 100px 0px;
+}
+
+.text_content h1 {
+    color: rgb(255, 255, 255);
+    font-size: var(--h1-font-size);
+    width: 100%;
+    max-width: 67%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--sofaiBold);
+}
+
+.text_content span {
+    text-align: center;
+    display: block;
+    font-size: var(--h1-font-size);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-family: var(--sofaiBold);
+}
+
+.site_footer_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+footer.site_footer {
+    padding: 30px 0px;
+    background-color: rgb(182, 153, 219);
+}
+
+.footer_nav ul li a {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.sign_in h1 {
+    font-size: var(--second-font-size);
+    color: rgb(255, 255, 255);
+    font-family: var(--tan_font_family);
+}
+
+.sign_in p {
+    font-size: var(--second-font-size);
+    color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    font-family: var(--sofiapro_regular);
+}
+
+ul.socail_media {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+ul.socail_media li a i {
+    font-size: var(--h1-font-size);
+    margin-right: 25px;
+}
+
+.sign_in span {
+    font-size: var(--second-font-size);
+    color: rgb(255, 255, 255);
+    font-family: var(--sofiapro_regular);
+}
+
+.subcribe input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+    width: 100%;
+    margin-right: 14px;
+    max-width: 65%;
+    font-family: var(--sofiapro_regular);
+    font-size: 21px;
+}
+
+.subcribe button {
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: var(--second-font-size);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 6px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: var(--font-family_anchor);
+}
+  .sign_in a {
+    color: #fff;
+}
+
+    .sign_in a:hover {
+    color: #000;
+}
+.subcribe input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.sign_in {
+    width: 100%;
+    max-width: 40%;
+}
+
+.subcribe {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bolg_text {
+    width: 100%;
+    max-width: 47%;
+}
+
+.burger-1 {
+    display: none;
+}
+  .our_specfilty {
+    margin-bottom: 20px;
+    min-height: 176px;
+    max-width: 45%;
+}
+.properties {
+    width: 100%;
+     max-width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+  ul.socail_media li {
+    padding: 0 10px;
+}
+.product-share {
+    display: flex;
+}
+
+
+.product-share ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-share li {
+    width: 30px;
+}
+  
+  .spotifyPlayList {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.spotifyPlayList a {color: #ed5843;border: 1px solid #ed5843;display: inline-block;padding: 10px 20px;border-radius: 30px;transition: 0.4s ease-in-out;text-transform: uppercase;font-size: 18px;}
+
+.spotifyPlayList a:hover {
+    background: #ed5843;
+    color: #fff;
+}
+  
+  .page_nav ul li a.active, .page_nav ul li a:hover, .user_engage ul li a:hover {
+    color: #ed5843;
+}
+
+.page_nav ul li a, .user_engage ul li a {
+    transition: 0.4s ease-in-out;
+}

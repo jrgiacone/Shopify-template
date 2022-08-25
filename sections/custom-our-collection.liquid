@@ -1,0 +1,93 @@
+<section class="our-collection">
+        <div class="collection-container">
+            <h6>{{section.settings.heading}}</h6>
+            <h3>{{section.settings.m_heading}}</h3>
+            <div class="collection-flex">
+              
+                {%- for block in section.blocks limit:1 -%}
+    {%- assign collection = collections[block.settings.collection] -%}
+              
+              {% for product in collection.products limit:4 %}
+                <div class="collection-col">
+                    <div class="collection-product">
+                        <a href="{{ product.url}}" class="collection-img">
+                            <img src="{{ product.featured_media | img_url: '480x' }}" alt="collection-img1">
+                        </a>
+                        <div class="collection-text">
+                            <h5><a href="{{ product.url}}">{{ product.title }}</a></h5>
+                          <h6>{{product.metafields.content.product-content}}</h6>
+<!--                             <p> {{ product.description }}</p> -->
+                            <h6>{{ product.price | money }}</h6>
+                        </div>
+                    </div>
+                </div>
+              {% endfor %}
+              {% endfor %}
+             
+            </div>
+            <div class="view-all-cllection-btn">
+                <a href="{{section.settings.btn_link}}">{{section.settings.button}}</a>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "custom-our-collection",
+    "settings": [
+{
+"type":"text",  
+"id":"heading",
+"label":"heading"
+},
+{
+"type":"text",  
+"id":"m_heading",
+"label":"Mian heading"
+},
+{
+"type":"text",  
+"id":"button",
+"label":"button"
+},
+{
+"type":"url",  
+"id":"btn_link",
+"label":"btn_link"
+}
+
+
+],
+
+"blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+]
+}
+],
+
+
+
+"presets":[
+
+{ 
+"name":"Our Collection",
+"category":"Products"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,185 @@
+<style>
+html {
+    scroll-behavior: smooth !important;
+}
+  body a{
+ color:#707070; 
+  font-family: 'DM Serif Display';
+  }
+ a{
+ color:#707070; 
+ 
+  }
+
+  .faqs_main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 55px;
+    max-width: 1022px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    /* width: 63%; */
+    font-size: 21px;
+  }
+
+  .left1 {
+    width: 30%;
+  }
+  .left1 h2{
+    font-size:16px;
+    color:#707070;
+  }
+  .left1 h2:hover{
+    color:#000;
+  }
+
+
+  .left1 a {
+    text-decoration: none;
+  }
+
+  .right1 {
+    width: 60%;
+  }
+  .info_faqs {
+    margin-bottom: 70px;
+  }
+  .tesxti{
+    text-align:center;
+    padding-top:50px;
+  } 
+  .left1 a h2 {
+    opacity: 0.7;
+}
+
+.left1 a h2.active {
+    opacity: 1;
+    color: #000;
+    font-weight: 500;
+}
+   @media screen and (max-width: 767px){
+  .faqs_main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1033px;
+    margin: 0 auto;
+}
+     .left1 a h2 {
+    
+       font-size:13px;
+}
+     h2 {
+    
+    font-size: 15px;
+}
+     .left1 {
+    width: 37%;
+}
+
+   }
+
+
+</style>
+<section>
+  <div class="tesxti">
+    <P>{{section.settings.text_top}}</P>
+  </div>
+  <div class="faqs_main">
+    <div class="left1">
+      {% assign count = 0 %}
+      {% for block in section.blocks %}
+      {% if block.type == 'block_1' %}
+      <a href="#count{{ count }}"> 
+        <h2>
+          {{block.settings.qstions}}
+        </h2>
+      </a>
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+    </div>
+
+    <div class="right1">
+      {% assign count = 0 %}
+      {% for block in section.blocks %}
+      {% if block.type == 'block_2' %}
+      <div class="info_faqs" id="count{{ count }}">
+        <h2>
+          {{block.settings.ans_head}}
+        </h2>
+        <p>
+          {{block.settings.answer}}
+        </p>
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+
+
+    </div>
+
+  </div>
+
+</section>
+<script>
+
+$('.left1 a h2').click( function(e) {
+    $('.left1 a h2').removeClass('active')
+    $(this).addClass('active');
+})
+</script>
+
+{% schema %}
+{
+"name": "Faq",
+"settings": [
+{
+"type": "text",
+"id": "text_top",
+"label": "text_top"
+}
+
+
+],
+"blocks": [
+{
+"name": "FAQ qstn",
+"type": "block_1",
+"settings": [
+{
+"type": "text",
+"id": "qstions",
+"label": "Questions"
+}
+]
+},
+{
+"name": "FAQ ans",
+"type": "block_2",
+"settings": [
+{
+"type": "text",
+"id": "ans_head",
+"label": "Heading"
+}, 
+{
+"type": "textarea",
+"id": "answer",
+"label": "Answer"
+}
+]
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

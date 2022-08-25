@@ -1,0 +1,75 @@
+<section class="make_us_special">
+  <div class="container">
+    <div class="make_use_special_content">
+      <h1>{{section.settings.heading}}</h1>
+      <div class="make_use_special_properties">
+        <div class="properties">
+          {% for block in section.blocks %}
+          <div class="our_specfilty">
+            <h3>{{block.settings.title}}</h3>
+            <p>{{block.settings.para}}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+      <a href="{{section.settings.btn_link}}">{{section.settings.btn}}</a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+"name": "latest_context",
+"settings": [
+
+{
+"type": "text",
+"id": "heading",
+"label": "heading"
+},
+{
+"type": "text",
+"id": "btn",
+"label": "btn"
+},
+{
+"type": "url",
+"id": "btn_link",
+"label": "btn_link"
+}
+],
+"blocks": [
+{
+"name": "About1",
+"type": "block_1",
+"settings": [
+
+{
+"type": "text",
+"id": "title",
+"label": "title"
+},
+{
+"type": "textarea",
+"id": "para",
+"label": "para"
+}
+]
+}
+],
+"presets":[
+
+{ 
+"name":"latest_context",
+"category":"latest_context"
+}
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

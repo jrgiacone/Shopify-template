@@ -1,0 +1,552 @@
+@media only screen and (max-width: 1680px) {
+    .scent {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .blog_img {
+
+        min-height: 400px;
+
+    }
+
+    /* variable in cs */
+    :root {
+        --main-font-size: 20px;
+        --again-font:24px;
+        --h1-font-size: 25px;
+        --second-font-size: 18px;
+    }
+
+    /* font-size 45px = 40px */
+    .make_use_special_content h1 {
+        font-size: 40px;
+    }
+
+    /* font-size 27px = 22px */
+    .properties h3 {
+        font-size: 22px;
+    }
+
+    /* font-size 20px = 18px */
+    .properties p,
+    .bolg_text p {
+        font-size: 18px;
+    }
+
+    /* font-size 59px = 50px */
+    .donating_to_someone_content h1 {
+        font-size: 50px;
+    }
+
+    /* font-size 36px = 30px */
+    .our_blog_content h1 {
+        font-size: 30px;
+    }
+}
+  
+  @media only screen and (max-width: 1600px) {
+  
+    .our_specfilty {
+        margin-bottom: 0px;
+    }
+  
+  }
+
+@media only screen and (max-width: 1440px) {
+    .scent {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .site_header_content ul li a {
+        margin: 0 15px;
+    }
+
+
+    .text_content h1 {
+
+        max-width: 90%;
+    }
+
+    .bolg_text p {
+
+        max-width: 90%;
+    }
+
+    .sign_in {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .playlist_img {
+        min-height: 90px;
+    }
+/*     .page_nav {
+        width: 30%;
+    }
+    
+    .user_engage {
+        width: 30%;
+    } */
+  .make_use_special_content h1 {
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+    .our_specfilty {
+        margin-bottom: 0;
+        min-height: 210px;
+    }
+
+    section.some_text,
+    section.our_blog,
+    section.donating_to_someone {
+        padding: 50px 0;
+    }
+
+    .read_our_blog {
+        padding-top: 50px;
+    }
+
+    /* variable in cs */
+
+    :root {
+        --main-font-size: 18px;
+        --again-font: 24px;
+        --h1-font-size: 22px;
+        --second-font-size: 16px;
+    }
+
+
+    /* font-size 45px = 35px */
+    .make_use_special_content h1 {
+        font-size: 35px;
+    }
+
+    /* font-size 27px = 19px */
+    .properties h3 {
+        font-size: 19px;
+    }
+
+    /* font-size 20px = 16px */
+    .properties p,
+    .bolg_text p {
+        font-size: 16px;
+    }
+
+    /* font-size 59px = 50px */
+    .donating_to_someone_content h1 {
+        font-size: 35px;
+    }
+
+    /* font-size 36px = 27px */
+    .our_blog_content h1 {
+        font-size: 27px;
+    }
+
+    /* font-size 18px = 16px */
+    .footer_nav ul li a {
+        font-size: 16px;
+    }
+    .up_next p {
+        padding: 20px 30px;
+    }
+      .our_specfilty {
+    min-height: 170px;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .make_use_special_content,
+    .buy_candle,
+    .playlist_content,
+    .playlist_content,
+    .our_blog_content {
+        max-width: 95%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    section.banner {
+        width: 100%;
+        height: calc(50vh - 148px);
+    }
+
+    .make_use_special_content {
+        max-width: 100%;
+    }
+
+    .find_your_scent_text {
+        height: 40vh;
+    }
+
+    .scent {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .buy_candle,
+    .playlist_content,
+    .our_blog_content,
+    .text_content h1 {
+        max-width: 100%;
+    }
+
+    .bolg_text {
+        margin-left: 50px;
+        width: 100%;
+        max-width: 43%;
+    }
+
+    .site_footer_content {
+        max-width: 100%;
+    }
+
+    .blog_img {
+        max-width: 50%;
+        min-height: 400px;
+    }
+
+    .up_next p {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+  .page_nav.active {
+    top: 0px;
+}
+  .page_nav {
+    position: fixed;
+    top: -100vh;
+    width: 100vw;
+    height: 37vh;
+    left: 0;
+    transition: .8s all;
+}
+
+    .our_specfilty {
+        min-height: 260px;
+    }
+
+    .banner_content {
+        margin-bottom: 30px;
+    }
+
+    .find_your_scent_text {
+        padding-left: 40px;
+    }
+
+    .scent p {
+        margin-bottom: 30px;
+    }
+
+    .candle_porducts {
+        padding: 10px;
+    }
+
+    .listen_playlist {
+        width: 100%;
+        max-width: 49%;
+    }
+
+    .playlist_title {
+        padding: 10px;
+    }
+
+    .bolg_text p {
+        max-width: 100%;
+    }
+
+    .blog_img {
+
+        max-width: 46%;
+
+        min-height: 350px;
+
+    }
+
+    .bolg_text {
+        margin-left: 20px;
+        max-width: 50%;
+    }
+
+    .sign_in {
+        width: 100%;
+        max-width: 55%;
+    }
+
+    /* variable in cs */
+
+    :root {
+        --main-font-size: 16px;
+        --again-font: 23px;
+        --h1-font-size: 18px;
+        --second-font-size: 14px;
+    }
+
+
+
+    /* font-size 45px = 35px */
+    .make_use_special_content h1 {
+        font-size: 31px;
+    }
+
+    /* font-size 27px = 19px */
+    .properties h3 {
+        font-size: 19px;
+    }
+
+    /* font-size 20px = 16px */
+    .properties p,
+    .bolg_text p {
+        font-size: 14px;
+    }
+
+    /* font-size 59px = 50px */
+    .donating_to_someone_content h1 {
+        font-size: 40px;
+    }
+
+    /* font-size 36px = 24px */
+    .our_blog_content h1 {
+        font-size: 24px;
+    }
+
+    /* font-size 18px = 14px */
+    .footer_nav ul li a {
+        font-size: 14px;
+    }
+
+    .site_header_content ul li a {
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .collection-flex {
+    display: block;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.collection-col {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.collection-container {
+    margin: 0 auto;
+    padding: 0 12px;
+    text-align: center;
+}
+
+section.our-collection {
+    padding: 20px;
+}
+  .home-banner {
+    min-height: calc(41vh - 66px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+  .as-seen-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+    .page_nav.active {
+    top: 0px;
+}
+  .page_nav {
+    position: fixed;
+    top: -100vh;
+    width: 100vw;
+    height: 37vh;
+    left: 0;
+    transition: .8s all;
+}
+
+    .properties {
+        max-width: 100%;
+    }
+
+    .our_specfilty {
+
+min-height: max-content;
+
+margin-bottom: 20px;
+
+}
+
+    .find_your_scent_img {
+        max-width: 100%;
+        min-height: 400px;
+    }
+
+    .find_your_scent_text {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .candle_porducts {
+        padding: 0;
+    }
+
+    .candle_porducts {
+
+        max-width: 49%;
+    }
+
+    .listen_playlist {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .up_next p {
+        padding: 15px;
+    }
+
+    .donating_to_someone_content img {
+        max-width: 100%;
+    }
+
+    .donating_to_someone_content h1 {
+        margin-top: 20px;
+    }
+
+    .blog_img {
+        max-width: 100%;
+    }
+
+    .bolg_text {
+        margin: 20px 0 0;
+        max-width: 100%;
+    }
+
+    .sign_in {
+        margin: 20px 0 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subcribe {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+ 
+
+    .site_logo a img {
+        max-width: 100%;
+    }
+
+    .site_logo {
+        width: 100%;
+        max-width: 30%;
+        margin-left: 0;
+    }
+
+    .site_header_content ul li a {
+        margin: 0 5px;
+    }
+
+    .site_header_content .page_nav ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .burger-1 {
+        position: relative;
+
+        background: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-1 span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: black;
+        border-radius: 1px;
+        transition: 800ms all;
+    }
+
+    .burger-1 span::before,
+    .burger-1 span::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 1px;
+        background: black;
+        position: relative;
+        transition: 400ms all;
+    }
+
+    .burger-1 span::before {
+        top: -5px;
+    }
+
+    .burger-1 span::after {
+        bottom: -3px;
+    }
+
+    .burger-1.active span {
+        transform: rotate(-315deg);
+        background: red;
+    }
+
+    .burger-1.active span::before {
+        opacity: 0;
+    }
+
+    .burger-1.active span::after {
+        transform: rotate(90deg) translate(-25%);
+        background: red;
+    }
+
+  
+
+    div.user_engage ul li:not(:nth-child(2)) {
+        display: none;
+    }
+
+    .page_nav.active ul li a {
+        margin: 10px 0;
+    }
+    .user_engage {
+        margin-right: 20px;
+    }
+}

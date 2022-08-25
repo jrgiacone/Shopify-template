@@ -1,0 +1,71 @@
+<section class="shop_our_product">
+  <div class="container">
+    <div class="shop_our_product_content">
+      {%- for block in section.blocks limit:1 -%}
+     {%- assign collection = collections[block.settings.collection] -%}
+
+      <div class="buy_candle">
+
+     {% for product in collection.products limit:3 %}
+        <div class="candle_porducts">
+          <div class="product_img">
+            <img src="{{product.featured_image.src | img_url: 'master'}}" alt="">
+          </div>
+          <p>{{product.title }}</p>
+          <span>{{ product.price | money }}</span>
+        </div>
+        {% endfor %}
+        {% endfor %}
+
+      </div>
+      <a href="{{section.settings.btn_link}}">{{section.settings.button}}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "latest_feature_collection",
+"settings": [
+
+
+{
+"type":"text",  
+"id":"button",
+"label":"button"
+},
+{
+"type":"url",  
+"id":"btn_link",
+"label":"btn_link"
+}
+],
+"blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+]
+}
+],
+"presets":[
+
+{ 
+"name":"latest_feature_collection",
+"category":"latest_feature_collection"
+}
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

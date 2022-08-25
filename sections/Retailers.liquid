@@ -1,0 +1,141 @@
+<style>
+  
+  h2{
+  font-size:36px;
+  
+  }
+.retail_main {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+  padding: 20px;
+    padding-top: 50px;
+    
+  
+}
+  .info_retail p{
+  width:200px;
+    color:#707070;
+    font-size:15px;
+    font-weight:200;
+  
+  }
+  .info_retail p {
+    width: 650px;
+    margin: 0 auto;
+}
+  .retail_main img { 
+  
+  padding:20px 0 20px 0;
+  
+  }
+  
+  .retail_main .locate_map {
+    color: #17120D;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    background: #333334;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    border-radius: 3px;
+    padding: 12px;
+    width: 170px;
+}  
+  .retail_main .locate_map:hover {
+    background:#000;
+  }
+.content-for-layout {
+    padding-bottom: 10px;
+}
+  
+  
+  @media only screen and (max-width: 600px)
+{
+  
+   .info_retail p {
+    width: auto;
+    margin: 0 auto;
+}
+    .retail_main .locate_map {
+      width:auto;
+  
+  }
+  </style>
+<section>
+  <div class="retail_main">
+    <div class="info_retail">
+    <h2>
+      {{section.settings.head}}
+    </h2>
+    <p>
+     {{section.settings.paar}}
+    </p>
+    </div>
+    <img src="{{section.settings.img | img_url:'900x900'}}">
+     <h2>
+     {{section.settings.head1}}
+    </h2>
+    <p>
+     {{section.settings.para1}}
+    </p>
+    <a class="locate_map" href="{{section.settings.button_link}}">{{section.settings.button}}</a>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Retailers",
+    "settings": [
+
+
+{
+"type": "text",
+"id": "head",
+"label": "head"
+},
+{
+"type": "textarea",
+"id": "paar",
+"label": "paar"
+},
+
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+},
+{
+"type": "text",
+"id": "head1",
+"label": "head"
+},
+{
+"type": "textarea",
+"id": "para1",
+"label": "paar"
+},
+{
+"type": "text",
+"id": "button",
+"label": "button"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "button_link"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

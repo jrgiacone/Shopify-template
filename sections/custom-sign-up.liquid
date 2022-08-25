@@ -1,0 +1,65 @@
+<style>
+  
+  .email-container input[type="email"] {
+  
+    padding: 10px;
+  }
+  
+  input[type='text'], input[type='email'], input[type='tel'], input[type='password'], input[type='search'], input[type='number'], textarea, select {
+  
+    margin-bottom: 0px;
+  }
+</style>
+<section class="newletter-sec" style="background-image: url('{{section.settings.img | img_url:'master'}}');">
+   {% form 'customer' %}
+                  {%- if form.posted_successfully? -%}
+        <p>
+          Thanks for contact us
+        </p>
+      {%- endif -%}
+       <form>
+           <div class="newsletter-form">
+                <h3>{{section.settings.heading}}</h3>
+                <p>{{section.settings.para}}</p>
+                <div class="email-container">
+                    <input type="email" placeholder="Email Address" name="contact[email]" required >
+                    <input type="submit" value="subscribe">
+                </div>
+           </div>
+       </form>
+   {% endform %}
+    </section>
+
+
+{% schema %}
+  {
+    "name": "sign-up-custom",
+    "settings": [
+
+{
+"type":"image_picker",  
+"id":"img",
+"label":"img"
+},
+
+{
+"type":"text",  
+"id":"heading",
+"label":"heading"
+},
+{
+"type":"textarea",  
+"id":"para",
+"label":"para"
+}
+
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

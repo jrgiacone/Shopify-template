@@ -1,0 +1,64 @@
+<section class="find_our_scent">
+        <div class="find_your_content">
+            <div class="find_your_scent_img"  style="background-image:url('{{section.settings.img | img_url:'master'}}')"> 
+<!--               <img src="{{section.settings.img | img_url:'master'}}" alt="">  -->
+          </div>
+
+            <div class="find_your_scent_text">
+                <div class="scent">
+                    <h1>{{section.settings.heading}}</h1>
+                    <p>{{section.settings.para}}</p>
+                    <a href="{{section.settings.btn_link}}">{{section.settings.btn}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "latest_img_with_text",
+    "settings": [
+{
+"type":"image_picker",  
+"id":"img",
+"label":"img"
+},
+{
+"type":"text",  
+"id":"heading",
+"label":"heading"
+},
+{
+"type":"text",  
+"id":"para",
+"label":"para"
+},
+{
+"type":"text",  
+"id":"btn",
+"label":"btn"
+},
+{
+"type":"url",  
+"id":"btn_link",
+"label":"btn_link"
+}
+
+
+],
+"presets":[
+
+{ 
+"name":"latest_img_with_text",
+"category":"latest_img_with_text"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

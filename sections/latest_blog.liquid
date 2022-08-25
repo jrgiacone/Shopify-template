@@ -1,0 +1,50 @@
+<section class="our_blog">
+  <div class="container">
+    {%- assign blog = blogs[section.settings.blog] -%}
+    {% for article in blog.articles limit:1 %}
+    <div class="our_blog_content">
+      <h1>latest from our blog</h1>
+      <div class="read_our_blog">
+        <div class="blog_img" style="background-image:url('{{article.image | img_url:'master'}}')">
+<!--           <img src="{{article.image | img_url:'master'}}" alt=""> -->
+        </div>
+        <div class="bolg_text">
+          <h1> {{article.title}}
+          </h1>
+          <p>{{ article.excerpt }}</p>
+          <a href="{{article.url}}">READ MORE</a>
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "latest_blog",
+"settings": [
+{
+"id": "blog",
+"type": "blog",
+"label": "Blog"
+}
+
+],
+"presets":[
+
+{ 
+"name":"latest_blog",
+"category":"latest_blog"
+}
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

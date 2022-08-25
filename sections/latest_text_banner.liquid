@@ -1,0 +1,49 @@
+<style>
+  section.donating_to_someone {
+    background: linear-gradient(
+90deg, rgb(176, 219, 220) 0%, rgb(206, 241, 122) 100%);
+    padding: 100px 0px;
+}
+</style>
+
+<section class="donating_to_someone">
+        <div class="container">
+            <div class="donating_to_someone_content">
+                <img src="{{section.settings.img | img_url:'master'}}" alt="">
+                <h1>{{section.settings.heading}} </h1>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "latest_text_banner",
+    "settings": [
+{
+"type":"text",  
+"id":"heading",
+"label":"heading"
+},
+{
+"type":"image_picker",  
+"id":"img",
+"label":"img"
+}
+
+],
+"presets":[
+
+{ 
+"name":"latest_text_bannert",
+"category":"latest_text_banner"
+}
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

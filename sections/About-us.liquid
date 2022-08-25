@@ -1,0 +1,128 @@
+<style>
+  .titlee {
+    text-align: center;
+}
+
+section {
+    padding: 50px 100px 0px 100px;
+}
+
+.paraaa {margin-top: 100px;}
+
+.flexie {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.imgss {
+    width: 33.33%;
+    padding: 20px;
+}
+  .content-for-layout {
+    padding-bottom: 10px !important;
+}
+  
+  @media only screen and  (max-width:676px){
+  
+  section {
+    padding: 20px 20px 20px 20px;
+}
+  
+  .paraaa {
+    margin-top: 30px;
+}
+  
+  .flexie {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+  
+  
+  .imgss {
+    width: 33.33%;
+    padding: 3px;
+}
+  }
+</style>
+
+<section>
+  
+  <div class="titlee">
+    <h1>{{section.settings.title}}</h1>
+  </div>
+  <div class="paraaa">
+    <p>{{section.settings.para}}</p>
+    <p>{{section.settings.para1}}</p>
+  </div>
+  
+  <div class ="flexie">
+    <div class="imgss">
+      <img src="{{section.settings.img1 | img_url:'master'}}" alt="">
+      
+    </div>
+      <div class="imgss">
+     <img src="{{section.settings.img2 | img_url:'master'}}" alt="">
+      
+      
+    </div>
+      <div class="imgss">
+     <img src="{{section.settings.img3 | img_url:'master'}}" alt="">
+      
+      
+    </div>
+  </div>
+  
+</section>
+
+
+{% schema %}
+  {
+    "name": "About",
+    "settings": [
+
+{
+"type":"text",  
+"id":"title",
+"label":"heading"
+},
+
+{
+"type":"textarea",  
+"id":"para",
+"label":"para"
+},
+{
+"type":"textarea",  
+"id":"para1",
+"label":"para"
+},
+{
+"type":"image_picker",  
+"id":"img1",
+"label":"img"
+},
+{
+"type":"image_picker",  
+"id":"img2",
+"label":"img"
+},
+{
+"type":"image_picker",  
+"id":"img3",
+"label":"img"
+}
+
+
+
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

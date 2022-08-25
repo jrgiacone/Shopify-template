@@ -1,0 +1,41 @@
+    <section class="some_text">
+        <div class="container">
+            <div class="text_content">
+                <h1>{{section.settings.title}}</h1>
+                <span>{{section.settings.name}}</span>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "latest_annoucement",
+    "settings": [
+{
+"type":"textarea",  
+"id":"title",
+"label":"heading"
+},
+{
+"type":"text",  
+"id":"name",
+"label":"text"
+}
+
+],
+"presets":[
+
+{ 
+"name":"latest_annoucement",
+"category":"latest_annoucement"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
